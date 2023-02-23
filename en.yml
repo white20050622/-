@@ -1,49 +1,49 @@
 若不知道該改那些地方，可以至插件官方提供的網站進行編輯！！: https://ptp.pcgamingfreaks.at
 Language:
-  NotFromConsole: "&cThis command can't be used from the console!"
+  NotFromConsole: "&c不能從控制台使用此命令！"
   # Global Wildcards: <heart> and <smallheart>
   Ingame:
-    NoPermission: "&cYou don't have the permission to do that."
-    NaN: "&cThe entered value is not a number!"
-    NotMarried: "&cYou are not married."
-    PartnerOffline: "&cYour partner is offline."
-    PartnerNotInRange: "&cYour partner is too far away."
-    TargetPartnerNotFound: "&cYour targeted partner was not found!"
-    PlayerNotMarried: "&c\"{PlayerName}\" is not married!"
-    PlayerNotFound: "&cCouldn't find \"{PlayerName}\"!"
-    PlayerNotOnline: "&c\"{PlayerName}\" is offline!"
-    PlayersNotMarried: "&cThe players aren't married!"
-    MarriageNotExact: "&cWe are sorry, but there is more than one marriage matching your request!"
+    NoPermission: "&c你沒有權限這樣做"
+    NaN: "&c輸入的值不是數字！"
+    NotMarried: "&c你沒有結婚"
+    PartnerOffline: "&c你的伴侶不在線上"
+    PartnerNotInRange: "&c你的伴侶離得太遠了"
+    TargetPartnerNotFound: "&c沒有找到你的目標伴侶！"
+    PlayerNotMarried: "&c\"{PlayerName}\"沒有結婚！"
+    PlayerNotFound: "&c找不到\"{PlayerName}\"!"
+    PlayerNotOnline: "&c\"{PlayerName}\"不在線上！"
+    PlayersNotMarried: "&c這些玩家沒有結婚！"
+    MarriageNotExact: "&c很抱歉，符合您要求的婚姻對象不止一個！"
     JoinLeaveInfo:
       # Only used for players with 1 partner
-      PartnerOnline: "&aYour partner is online."
+      PartnerOnline: "&a你的伴侶在線上"
       # Only used for players with 1 partner
-      PartnerOffline: "&7Your partner is offline."
+      PartnerOffline: "&7你的伴侶不在線上"
       # Only used for players with more than 1 partner
-      AllPartnersOffline: "&7All your partners are offline."
+      AllPartnersOffline: "&7您所有的伴侶都不在線上"
       # Only used for players with more than 1 partner
-      PartnerOnlineMulti: "&aFollowing partners are online: &r&f{OnlinePartners}"
+      PartnerOnlineMulti: "&a以下伴侶在線：&r&f{OnlinePartners}"
       # Placeholders: {Name}, {DisplayName}.    Keep in mind display names can contain colors!  No JSON!!!
       MultiOnlineFormat: "{DisplayName}"
       # No JSON!!!
       MultiOnlineSeparator: "&r, "
       # Placeholders: {Name}, {DisplayName}
-      PartnerNowOnline: "&aYour partner is now online."
+      PartnerNowOnline: "&a你的伴侶現已在線"
       # Placeholders: {Name}, {DisplayName}
-      PartnerNowOffline: "&7Your partner is now offline."
+      PartnerNowOffline: "&7你的伴侶現已離線"
     Backpack:
-      OnlyInSurvival: "&cYou can only access your partner's backpack when you are in survival mode."
-      ShareOn: "&aYou now share your backpack with your partner."
-      ShareOff: "&cYou are no longer sharing your backpack with your partner."
-      Opened: "&aYour partner has opened your backpack."
-      ShareDenied: "&cYour partner doesn't give you access to their backpack."
+      OnlyInSurvival: "&c你只能在生存模式下存取伴侣的背包"
+      ShareOn: "&a你現在與你的伴侶共享你的背包"
+      ShareOff: "&c你不再與伴侶共用背包"
+      Opened: "&a你的伴侶打開了你的背包"
+      ShareDenied: "&c你的伴侶不允許你使用他們的背包"
     Chat:
-      Joined: "&aYou have set your chat to the private marry chat."
-      Left: "&aYou have set your chat to public chat."
-      ListeningStarted: "&aYou are now listening to the marry chat."
-      ListeningStopped: "&aYou are no longer listening to the marry chat."
-      TargetSet: "&aPrivate chat target set."
-      DisplayNameAll: "All Partners"
+      Joined: "&a你已將聊天設置為私人結婚聊天"
+      Left: "&a你已將聊天設置為公開聊天"
+      ListeningStarted: "&a你現在正在收聽結婚聊天"
+      ListeningStopped: "&a您不再收聽結婚聊天"
+      TargetSet: "&a私人聊天目標組"
+      DisplayNameAll: "所有伴侶"
       # Placeholders: {SenderDisplayName}, {SenderName}, {ReceiverDisplayName}, {ReceiverName}, {Message}, {MagicHeart}
       Format: "{MagicHeart}&r {SenderDisplayName}&r&6 => &r{ReceiverDisplayName}&r&f: &r{Message}"
     Gift:
