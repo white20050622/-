@@ -208,7 +208,7 @@ Language:
       PriestOff: "Priest {DisplayName}&r is now offline, wedding called off."
       PlayerOff: "{DisplayName}&r is now offline, wedding called off."
       Self:
-        NotYourself: "&cYou can't marry yourself."
+        NotYourself: "&c你不能跟你自己結婚!."
         NotInRange: "&cThe player is not in range! They need to be within {Range} blocks!"
         AlreadySamePair: "&cWe are already married with &r&c{DisplayName}&r&c!"
         AlreadyMarried: "&cYou are already married with &r&c{DisplayName}&r&c!"
@@ -219,7 +219,7 @@ Language:
         YouCalledOff: "You have called the wedding off."
         PlayerCalledOff: "{DisplayName}&r called the wedding off."
         Confirm: "[\"\",{\"text\":\"{DisplayName}&r\"},{\"text\":\" wants to marry you. Accept the marriage with \",\"color\":\"white\"},{\"text\":\"/marry accept\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/marry accept\"}},{\"text\":\" or deny it with \",\"color\":\"white\"},{\"text\":\"/marry deny\",\"color\":\"red\",\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/marry deny\"}},{\"text\":\".\",\"color\":\"white\"}]"
-        RequestSent: "Marriage request sent."
+        RequestSent: "已送出結婚請求."
         PlayerOff: "{DisplayName}&r is now offline, wedding called off."
         NotOnYourOwn: "&cYou can't perform your own wedding. Please ask a priest to perform the wedding for you."
     Divorce:
@@ -237,8 +237,8 @@ Language:
       Confirm: "[\"\",{\"text\":\"{PriestDisplayName}&r\"},{\"text\":\" wants to divorce you from \",\"color\":\"white\"},{\"text\":\"{PartnerDisplayName}\"},{\"text\":\". Accept the divorce with \",\"color\":\"white\"},{\"text\":\"/marry accept\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/marry accept\"}},{\"text\":\" or deny it with \",\"color\":\"white\"},{\"text\":\"/marry deny\",\"color\":\"red\",\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/marry deny\"}},{\"text\":\".\",\"color\":\"white\"}]"
       NotInRange: "&aThe players are not in range! They need to be within {Range} blocks!"
       Self:
-        Divorced: "&aYou left &r&a{DisplayName}&r&a. You are free now."
-        DivorcedPlayer: "{DisplayName}&r&a has left you. You are free now."
+        Divorced: "&a你離開了 &r&a{DisplayName}&r&a. 你自由了."
+        DivorcedPlayer: "{DisplayName}&r&a 離開了你. 你自由了."
         Broadcast: "&a&r&a{Player1DisplayName}&r&a has divorced from &r&a{Player2DisplayName}&r&a."
         PlayerOff: "{DisplayName}&r is now offline, divorce canceled."
         RequestSent: "Divorce request sent to {DisplayName}&r."
@@ -249,8 +249,8 @@ Language:
         YouCancelled: "&aYou cancelled your divorce request from &r&a{DisplayName}&r&a!"
         NotInRange: "&aYour partner is not in range! You need to be within {Range} blocks!"
     Economy:
-      NotEnough: "&cYou don't have enough money! You need {Cost} {CurrencyName} for that."
-      PartnerNotEnough: "&cYour partner doesn't have enough money!"
+      NotEnough: "&c你沒有足夠的錢! 你需要 {Cost} {CurrencyName} 來做那件事."
+      PartnerNotEnough: "&c你的伴侶沒有足夠的錢!"
       PriestMarryNotEnough: "&cThe players you are trying to marry don't have enough money."
       PriestDivorceNotEnough: "&cThe players you are trying to divorce don't have enough money."
       MarriagePaid: "&aYou paid {Cost} {CurrencyName} for your marriage ({Remaining} {CurrencyName} left)."
@@ -261,11 +261,11 @@ Language:
       GiftPaid: "&aYou have paid {Cost} {CurrencyName} for gifting an item to your partner ({Remaining} {CurrencyName} left)."
       SurnameChangePaid: "&aYou have paid {Cost} {CurrencyName} to change a surename ({Remaining} {CurrencyName} left)."
     Admin:
-      Reloading: "&1Reloading ..."
-      Reloaded: "&1Reloaded!"
+      Reloading: "&1重新整理中..."
+      Reloaded: "&1重整完畢!"
       ReloadingDatabase: '&bReloading database &6.&r&c.&r&a.&r'
-      CheckingForUpdates: "&1Checking for updates ..."
-      Updated: "&ePlugin updated, will be loaded on next restart/reload."
+      CheckingForUpdates: "&1檢查更新 ..."
+      Updated: "&e插件已更新, 將會在下次重啟時載入."
       NoUpdate: "&6No plugin update available."
       UpdateFail: "&cThere was a problem looking for updates! Please check the console!"
       # You can change this message if you like to, but don't cry if the link isn't linking to the plugin anymore!
@@ -287,7 +287,7 @@ Language:
         # Will be used if the player is a priest
         Priest:
           - " &3__&b&lMarry&r&3__"
-          - "&b You can marry players by using /marry marry <player1> <player2>"
+          - "&b 你可以使用 /marry 來嫁給其他玩家 <player1> <player2>"
           - '[{"text":"Use ","color":"dark_green"},{"text":"/marry help","color":"dark_aqua","bold":true},{"text":" for full list of all commands"}]'
         # Will be used if the player is neither married nor a priest
         Default:
@@ -300,37 +300,37 @@ Language:
     PlayerNameVariable: "player_name"
     PartnerNameVariable: "partner_name"
     SurnameVariable: "surname"
-    MessageVariable: "message"
+    MessageVariable: "訊息"
     Description:
-      Backpack: "Opens the backpack of your partner."
-      BackpackOn: "Allows your partner to use your backpack."
-      BackpackOff: "Disallows your partner to use your backpack."
-      Chat: "Private chat with your partner."
+      Backpack: "打開伴侶的背包."
+      BackpackOn: "同意你的伴侶使用你的背包."
+      BackpackOff: "拒絕你的伴侶使用你的背包."
+      Chat: "跟你的伴侶私聊."
       ChatSetTarget: "Changes the private message target. If not changed all partners will get the message."
       ChatToggle: "Toggles your chat to be private with your partner."
       ChatListen: "Shows all chat-messages sent from a married player to their partner."
       Gift: "Gifts the item in your hand to your partner."
-      Home: "Teleports you to your home."
-      HomeOther: "Teleports you to a married players home."
-      SetHome: "Sets your home."
-      SetHomeOther: "Sets the home of a married player."
-      DelHome: "Deletes your home."
-      DelHomeOther: "Deletes the home of a married player."
+      Home: "傳送到你的家."
+      HomeOther: "傳送到你伴侶的家."
+      SetHome: "設定你的家."
+      SetHomeOther: "設定伴侶的家."
+      DelHome: "刪除你的家."
+      DelHomeOther: "刪除伴侶的家."
       Help: "Shows all available commands and their description."
-      List: "Lists all married players."
+      List: "已結婚的玩家列表."
       ListPriests: "Lists all currently online priests."
       Partners: "List all partners of a player"
       PvP: "Changes PvP status with partner."
       PvPOn: "Enables PvP with partner."
       PvPOff: "Disables PvP with partner."
       Tp: "Teleports you to your partner."
-      Kiss: "You kiss your partner."
-      Hug: "You hug your partner."
+      Kiss: "你親吻了你的伴侶."
+      Hug: "你抱了你的伴侶."
       Seen: "Shows when your partner was online the last time."
       Marry: "Marry two players."
-      MarrySelf: "Sends a marry request to another player."
+      MarrySelf: "對另一位玩家送出結婚請求."
       Divorce: "Divorces two players."
-      DivorceSelf: "To leave your partner."
+      DivorceSelf: "離開你的伴侶."
       Surname: "Changes the surname of a couple."
       SurnameSelf: "Changes the surname from your partner and you."
       Update: "Checks if there is an update available and downloads it."
@@ -443,8 +443,8 @@ Dialog:
   AndDoYouWant: "And do you {Player2Name}, want to marry {Player1Name} on this server?"
   # Placeholders: {Planer1Name}, {Player1DisplayName}, {Planer2Name}, {Player2DisplayName}
   Married: "I now pronounce {Player1Name} and {Player2Name} married! You may now kiss."
-  YesIWant: "Yes, I will!"
-  NoIDontWant: "No, I will not!"
+  YesIWant: "是的,我願意!"
+  NoIDontWant: "不,我不願意!"
 # This selection allows to change the placeholder return values. You can change them if you like. https://github.com/GeorgH93/MarriageMaster/wiki/Placeholders
 Placeholders:
   # The default formatting data that should be used if nothing else is specified
@@ -452,8 +452,8 @@ Placeholders:
     Boolean:
       True: true
       False: false
-    NotMarried: "not married"
-    NoHome: "no home"
+    NotMarried: "未結婚"
+    NoHome: "沒有家"
     Separator: "&r, "
     NoPartnerForSlot: ""
   Heart:
