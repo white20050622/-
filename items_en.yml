@@ -9,7 +9,7 @@
 # For all items that are not in the file the names from the Bukkit Materials enum will be used.
 
 Items:
-  air: "Air"
+  air: "空氣"
   barrier: "Barrier"
   stone: "Stone"
   granite: "Granite"
