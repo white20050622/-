@@ -5,8 +5,8 @@
 
 
 ** 貢獻玩家名單 **
->> Ding_1217_
+> Ding_1217_
 
 ** 注意事項 **
 ※ 針對亂翻譯者，將依伺服器規定進行懲處。
-※ 任何有關翻譯的討論請至 Discord 頻道 進行討論， 點我前往 [Markdown Live Preview](https://discord.gg/D4zHfjsxbd)
+※ 任何有關翻譯的討論請至 Discord 頻道 進行討論，[點我前往](https://discord.gg/D4zHfjsxbd)
