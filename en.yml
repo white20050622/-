@@ -103,28 +103,20 @@ Language:
       BlockedFrom: "&c你不能從這裡傳送回家"
       BlockedTo: "&cYou are not allowed to teleport to your home. Please move it."
     Kiss:
-      Kissed: "&eYou have kissed your partner!"
       Kissed: "&e你親吻了你的伴侶！"
       Kissed_SendMethod: "action_bar"
-      GotKissed: "&eYour partner has kissed you!"
       GotKissed: "&e你的伴侶吻了你！"
       GotKissed_SendMethod: "action_bar"
-      TooFarAway: "&cYou are too far away to kiss your partner. (Max {Distance} blocks)"
       TooFarAway: "&c你離得太遠了，無法親吻你的伴侶。(最遠{Distance}格)"
       # Placeholders: {Time}, {TimeLeft} in seconds
-      Wait: "&cYou have to wait {Time} seconds to kiss your partner again."
       Wait: "&c你必須等待{Time}秒才能再次親吻你的伴侶。"
     Hug:
-      Hugged: "&eYou have hugged your partner!"
       Hugged: "&e你擁抱了你的伴侶！"
       Hugged_SendMethod: "action_bar"
-      GotHugged: "&eYour partner has hugged you!"
       GotHugged: "&e你的伴侶擁抱了你！"
       GotHugged_SendMethod: "action_bar"
-      TooFarAway: "&cYou are too far away to hug your partner. (Max {Distance} blocks)"
       TooFarAway: "&c你離得太遠了，無法擁抱你的伴侶。(最遠{Distance}格)"
       # Placeholders: {Time}, {TimeLeft} in seconds
-      Wait: "&cYou have to wait {Time} seconds to hug your partner again."
       Wait: "&c你必須等待{Time}秒才能再次擁抱你的伴侶。"
     Seen:
       # Placeholders: {Name}, {DisplayName}
@@ -139,31 +131,24 @@ Language:
       # Placeholders: {Player1Name}, {Player1DisplayName}, {Player2Name}, {Player2DisplayName}, {Surname}, {MagicHeart}
       Format: "&2{Player1DisplayName} {MagicHeart} &2{Player2DisplayName}"
       NoMarriedPlayers: "&cThere are no married players."
-      Headline: "&eMarried players list&r&f - &r&6showing page {CurrentPage}/{MaxPage}"
       NoMarriedPlayers: "&c沒有已婚玩家"
       Headline: "&e已婚玩家名單&r&f - &r&6顯示頁數 {CurrentPage}/{MaxPage}"
       Footer: "[\"\",{\"text\":\"<<< Previous <<<\",\"color\":\"gray\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/{MainCommand} {SubCommand} {PrevPage}\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"/{MainCommand} {SubCommand} {PrevPage}\"}},{\"text\":\" Showing page {CurrentPage}/{MaxPage} \",\"color\":\"gold\"},{\"text\":\">>> Next >>>\",\"color\":\"gray\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/{MainCommand} {SubCommand} {NextPage}\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"/{MainCommand} {SubCommand} {NextPage}\"}}]"
     Partners:
-      Headline: "&ePartner list of {DisplayName}:"
       Headline: "{DisplayName}&e的伴侶名單:"
       Footer: "&e##############################"
-      NotMarried: "{DisplayName}&e is not married."
       NotMarried: "{DisplayName}&e沒有結婚"
       # Player1 is the player that was queried. Player2 is the partner
       Format: "&2{Player1DisplayName} {MagicHeart} &2{Player2DisplayName}"
     ListPriests:
       Format: "&2{PriestDisplayName}"
       NoPriestsOnline: "&cThere are no priests online."
-      Headline: "&eOnline priests&r&f - &r&6showing page {CurrentPage}/{MaxPage}"
       NoPriestsOnline: "&c沒有牧師在線"
       Headline: "&e在線牧師&r&f - &r&6顯示頁數 {CurrentPage}/{MaxPage}"
       Footer: "[\"\",{\"text\":\"<<< Previous <<<\",\"color\":\"gray\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/{MainCommand} {SubCommand} {PrevPage}\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"/{MainCommand} {SubCommand} {PrevPage}\"}},{\"text\":\" Showing page {CurrentPage}/{MaxPage} \",\"color\":\"gold\"},{\"text\":\">>> Next >>>\",\"color\":\"gray\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/{MainCommand} {SubCommand} {NextPage}\"},\"hoverEvent\":{\"action\":\"show_text\",\"value\":\"/{MainCommand} {SubCommand} {NextPage}\"}}]"
     PvP:
-      IsDisabled: "&cYou can't hurt your partner if you have PvP disabled."
       IsDisabled: "&c如果你禁用了PvP，你就不能傷害你的伴侶"
       IsDisabled_SendMethod: "action_bar"
-      On: "&aYou have now enabled PvP with your partner."
-      Off: "&aYou have now disabled PvP with your partner."
       On: "&a你現在已與你的伴侶啟用了PvP"
       Off: "&a你現在已與你的伴侶禁用了PvP"
     TP:
@@ -181,7 +166,6 @@ Language:
         Notification: "[\"\",{\"text\":\"{DisplayName}&r想傳送到你身邊。Accept the teleport with \"},{\"text\":\"/marry accept\",\"color\":\"green\",\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/marry accept\"}},{\"text\":\" or deny it with \"},{\"text\":\"/marry deny\",\"color\":\"red\",\"underlined\":true,\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/marry deny\"}},{\"text\":\".\"}]"
         WaitForConfirmation: "請等到你的伴侶接受傳送"
         Denied: "你拒絕了伴侶的傳送請求"
-        DeniedPartner: "你的伴侶拒絕了傳送請求"
         Canceled: "你取消了傳送請求"
         CanceledPartner: "你的伴侶取消了傳送請求"
         CanceledDisconnectRequester: "你的伴侶下線了。傳送請求已取消"
